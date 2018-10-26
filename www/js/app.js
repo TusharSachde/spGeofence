@@ -30,7 +30,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           console.log("Successful initialization");
 
           var geofenceData = [{
-            id: "69ca1b88-6fbe-4e80-a4d4-ff4d3748acdb",
+            id: "1",
             latitude: 51.5066815,
             longitude: -0.090208,
             radius: 300,
@@ -42,7 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               openAppOnClick: true
             }
           }, {
-            id: "69ca1b88-6fbe-4e80-a4d4-ff4d3748acdb",
+            id: "2",
             latitude: 51.584413,
             longitude: -0.264401,
             radius: 300,
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               openAppOnClick: true
             }
           },  {
-            id: "69ca1b88-6fbe-4e80-a4d4-ff4d3748acdb",
+            id: "3",
             latitude: 51.523291,
             longitude:  -0.156906,
             radius: 300,

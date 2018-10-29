@@ -28,51 +28,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       if (window.geofence) {
         window.geofence.initialize().then(function () {
           console.log("Successful initialization");
-
-          var geofenceData = [{
-            id: "1",
-            latitude: 51.5066815,
-            longitude: -0.090208,
-            radius: 300,
-            transitionType: TransitionType.ENTER,
-            notification: {
-              id: 1,
-              title: "Welcome to Minerva House",
-              text: "You just arrived to Minerva House.",
-              openAppOnClick: true
-            }
-          }, {
-            id: "2",
-            latitude: 51.584413,
-            longitude: -0.264401,
-            radius: 300,
-            transitionType: TransitionType.ENTER,
-            notification: {
-              id: 1,
-              title: "Welcome to Kingsbury",
-              text: "You just arrived to Kingsbury, Uphill Drive.",
-              openAppOnClick: true
-            }
-          },  {
-            id: "3",
-            latitude: 51.523291,
-            longitude:  -0.156906,
-            radius: 300,
-            transitionType: TransitionType.ENTER,
-            notification: {
-              id: 1,
-              title: "Welcome to Baker Street",
-              text: "You just arrived to Baker street tube station.",
-              openAppOnClick: true
-            }
-          } 
-        ];
-
-          window.geofence.addOrUpdate(geofenceData).then(function () {
-            console.log('Geofence successfully added');
-          }, function (reason) {
-            console.log('Adding geofence failed', reason);
-          });
         }, function (error) {
           console.log("Error", error);
         });
